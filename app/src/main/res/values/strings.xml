@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GerenciadorEventos</string>
+    <string name="title_activity_cadastro_evento">CadastroEventoActivity</string>
+</resources>
