@@ -16,13 +16,11 @@ class EventoAdapter(
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val nome: TextView = itemView.findViewById(R.id.txtNome)
         private val data: TextView = itemView.findViewById(R.id.txtData)
-        private val local: TextView = itemView.findViewById(R.id.txtLocal)
         private val descricao: TextView = itemView.findViewById(R.id.txtDescricao)
 
         fun bind(evento: Evento) {
             nome.text = evento.nome
             data.text = evento.data
-            local.text = evento.local
             descricao.text = evento.descricao
             itemView.setOnClickListener { onItemClick(evento) }
         }
